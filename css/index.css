@@ -1,0 +1,66 @@
+body {
+    color: rgba(255, 38, 0, 0.726);
+    background-color: rgb(22, 22, 22);
+    font-family: monospace;
+    margin: 0;
+    font-size:20px;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.box h1 {
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 20px solid rgba(255, 38, 0, 0.726);
+    animation: type 3s steps(4, end), caret-blink 1s ease infinite;
+}
+
+.box button { 
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    border: solid;
+    color: rgb(255, 0, 0); 
+    cursor: crosshair;
+    border-radius: 10px;
+    font-family: monospace;
+    animation: caret-blink 1s ease infinite;
+    transition: opacity 0.2s;
+
+}
+
+.box button:hover{
+    animation: caret-blink .1s ease infinite;
+}
+
+@keyframes type { 
+    from { 
+        width: 0ch; 
+    }
+    to {
+        width: 4ch; 
+}   }
+
+@keyframes caret-blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(255, 38, 0);
+    }
+    100% {
+        border-color: transparent;
+    }
+}
