@@ -1,0 +1,12 @@
+body {
+  color: rgba(255, 38, 0, 0.726);
+  background-color: rgb(22, 22, 22);
+  font-family: monospace;
+  margin: 0;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center vertically (optional) */
+}
